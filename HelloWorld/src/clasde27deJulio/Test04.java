@@ -49,12 +49,15 @@ public class Test04 {
 		System.out.println("\n\n\n");
 		studentName2.remove(3); //by index
 //		studentName2.remove("Jason");// by value
-		//데이타를 지우면서 길이도 삭제함 
+		//데이터를 지우면서 길이도 삭제함 
 		for(int i=0;i<studentName2.size();i++) {
 			System.out.println(studentName2.get(i));//조회
 		}
 //		studentName2.clear();// delete all
 		// method(메쏘드) - get remove set add p.724
+		ArrayList<Integer> point=new ArrayList<Integer>();
+		point.add(100);
+		point.add(84);
 		
 	} 
 

@@ -28,6 +28,7 @@ public class Tarea05 {
 				str=s.nextLine();
 		}
 					System.out.println("프로그램 종료");
+					s.close();
 		}
 	}
 	//dhk rodjfuqek!!!

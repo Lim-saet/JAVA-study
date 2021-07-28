@@ -1,10 +1,10 @@
 package clasde27deJulio;
 
-/*import java.util.Scanner;
+import java.util.Scanner;
 
 public class Test01 {
 
-	public static void main(String[] args) {*/
+	public static void main(String[] args) {
 		// 12 24 숫자 두개
 		//12: 2 3 4 5 6 12
 		//24: 2 3 4 6 12 24
@@ -15,13 +15,9 @@ public class Test01 {
 		//최소공배수 최대공약수를 구한다
 		//출력
 		
-/*		Scanner s=new Scanner(System.in);
+		Scanner s=new Scanner(System.in);
 		int n=s.nextInt();
 		int b=s.nextInt();
-		int small=0;
-		if(m>n) small=n;
-		else small=m;
-		int least=1;
 		
 		for(int i=2; i<=n; i++) {
 				if(n%i!=0) {
@@ -30,4 +26,4 @@ public class Test01 {
 		}
 	}
 }
-*/
+
