@@ -2,7 +2,7 @@ package clase29deJulio;
 
 import java.util.Scanner;
 
-public class Restaurant {
+public class Main {
 
 	public static void main(String[] args) {
 		Menu menu = new Menu();//함수 선언: Menu클래스가 변수 menu의 값에 들어감 
@@ -40,13 +40,12 @@ public class Restaurant {
 		
 		while(!m.equals("")) { //메뉴 가격 입력 반복문 
 			System.out.println("메뉴입력");
-			String mn=s.nextLine();
-			menu.addName(mn);
+			m=s.nextLine();//스캐너를 통해 반복을 멈추고 값 입력을 기다리게 됌 
+			menu.addName(m);
 			System.out.println("가격입력");
+			p=s.nextInt();//스캐너를 통해 반복을 멈추고 값 입력을 기다리게 됌 
 			menu.addPrice(p);
-			
 		}
-		
 		menu.showMenu();//Menu클래스의 showMenu 함수부분 행동 가져와주세요.
 		s.close();
 	}

@@ -20,7 +20,7 @@ public class Menu {
 	void showMenu() {
 		//alName, alPrice 출력
 		for(int i=0; i<alName.size();i++) {
-		 System.out.println("메뉴는 "+alName.get(i)+" "+"가격은 "+alPrice.get(i));
+		 System.out.println("메뉴는 "+alName.get(i)+"이고"+" "+"가격은 "+alPrice.get(i)+"원 입니다.");
 		}
 	}
 
