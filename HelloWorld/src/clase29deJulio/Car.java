@@ -25,7 +25,7 @@ public class Car {
 			return nColor;
 		}
 		public void setnColor(String nColor) {
-			this.nColor = nColor;//this.nColor 위에서 정의한 속성(변수)을 의미
+			this.nColor = nColor;//this.nColor:위에서 정의한 속성(변수)을 의미
 		}
 		public int getMaxSpeed() {
 			return maxSpeed;
