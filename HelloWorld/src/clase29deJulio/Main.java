@@ -6,14 +6,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		Menu menu = new Menu();//함수 선언: Menu클래스가 변수 menu의 값에 들어감 
-		menu.init();
+		menu.init();//menu 클래스의 init의 동작을 실행시키겠습니다
+					//
 		//메뉴이름/가격을 입력하는 루틴
 		//메뉴이름이 ""이 입력되면 루틴(반복문) 종료
 		//그동안 입력된 메뉴명/가격출력
 		
 	
 		Scanner s= new Scanner(System.in);
-		
+		Scanner s1=new Scanner(System.in);
 		
 //		while(true) {//while문이 트루이기때문에 계속 반복 false가 나올때까지 무한 반복
 //			System.out.println("메뉴 입력");
@@ -34,20 +35,21 @@ public class Main {
 //			menu.addPrice(pr);//addPrice(pr)- 어레이리스트에 가격 입력
 //		}
 		
-		
-		int p=s.nextInt();
-		String m=s.nextLine();
+		System.out.println("메뉴입력");
+		String m=s.nextLine();//메뉴명 읽기
+		int p;
 		
 		while(!m.equals("")) { //메뉴 가격 입력 반복문 
-			System.out.println("메뉴입력");
-			m=s.nextLine();//스캐너를 통해 반복을 멈추고 값 입력을 기다리게 됌 
-			menu.addName(m);
 			System.out.println("가격입력");
-			p=s.nextInt();//스캐너를 통해 반복을 멈추고 값 입력을 기다리게 됌 
+			p=s1.nextInt();//스캐너를 통해 반복을 멈추고 값 입력을 기다리게 됌 
+			menu.addName(m);
 			menu.addPrice(p);
+			System.out.println("메뉴명입력");
+			s.nextLine();//스캐너를 통해 반복을 멈추고 값 입력을 기다리게 됌 
 		}
 		menu.showMenu();//Menu클래스의 showMenu 함수부분 행동 가져와주세요.
 		s.close();
+		s1.close();
 	}
 
 }
