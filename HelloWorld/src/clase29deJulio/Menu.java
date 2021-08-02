@@ -1,10 +1,11 @@
 package clase29deJulio;
 
+
 import java.util.ArrayList;
 
 public class Menu { //선언과 정의만 들어있고 실행코드는 메소드안에 들어가야함
-	private ArrayList<String> alName;
-	private ArrayList<Integer> alPrice;
+	 ArrayList<String> alName;
+	 ArrayList<Integer> alPrice;
 	
 	void init() {
 		this.alName=new ArrayList<String>();
@@ -17,12 +18,16 @@ public class Menu { //선언과 정의만 들어있고 실행코드는 메소드
 	void addPrice(int price) {
 		this.alPrice.add(price);
 	}
+	
 	void showMenu() {
 		//alName, alPrice 출력
 		for(int i=0; i<alName.size();i++) {
 		 System.out.println("메뉴는 "+alName.get(i)+"이고"+" "+"가격은 "+alPrice.get(i)+"원 입니다.");
 		}
 	}
-
 	
-}
+	
+
+	} 
+	
+
