@@ -23,7 +23,6 @@ public class Car2 {
 					 gas--;
 				 } else {
 					 System.out.println("멈춥니다.(gas잔량: "+gas+")");
-					 System.out.println("gas를 주입하세요.");
 					 return;
 				 }
 			}
