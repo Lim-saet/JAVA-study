@@ -19,7 +19,7 @@ public class Tarea1 {
 			System.out.println("모르는 이니셜");
 		}
 		System.out.println("프로그램 종료");
-
+		s.close();
 	}
 
 }
