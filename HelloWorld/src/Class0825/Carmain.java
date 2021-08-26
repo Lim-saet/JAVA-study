@@ -11,6 +11,7 @@ public class Carmain {
 				System.out.println("출발합니다.");
 				myCar.run();
 			} 	
+			gasState=myCar.isLeftGas();
 			if(gasState) {
 			System.out.println("gas를 주입할 필요가 없습니다.");
 			} else {
