@@ -35,12 +35,26 @@ public class BankApplication {
 	private static void createAccount() {
 		System.out.println("------------");
 		System.out.println("계좌생성");
+		System.out.println("------------");
+		String ano= scanner.nextLine();
+		System.out.println("계좌주");
+		String owner=scanner.nextLine();
+		System.out.println("초기입금액");
+		int balance = scanner.nextInt();
+		System.out.println("계좌가 생성되었습니다.");
+		Account account=new Account(ano,owner,balance);
 		
 	}
 	
 	//계좌목록보기
 	private static void accountList() {
 		//for문으로 빈배열의 자리를 찾아 계좌정보를 넣음 
+		for(int i=0;i<accountArray.length;i++){
+			if(accountArray[i]==null) {
+				String ch_balance = Integer.toString(balance);
+				accountArray = new String[i] {ano,owner,ch_balance};
+			}
+		}
 	}
 	
 	//예금하기
@@ -55,7 +69,7 @@ public class BankApplication {
 	
 	//Account 배열에서 ano와 동일한 Account 객체 찾기
 	private static Account findAccount(String ano) {
-		//return null;
+		return null;
 	
 	}
 }
